@@ -137,7 +137,7 @@ public class AGV {
      */
     public Status getStatus() {
         // TODO: Return the current status of the AGV
-        return null;
+        return this.status;
     }
 
     /**
@@ -148,7 +148,7 @@ public class AGV {
      */
     public double getBatteryLevel() {
         // TODO: Return the current battery level
-        return 0.0;
+        return this.batteryLevel;
     }
 
     /**
@@ -158,7 +158,8 @@ public class AGV {
      */
     public int[] getPosition() {
         // TODO: Return the current position as [x, y]
-        return new int[2];
+        int[] position = {this.x, this.y};
+        return position;
     }
 
     /**
